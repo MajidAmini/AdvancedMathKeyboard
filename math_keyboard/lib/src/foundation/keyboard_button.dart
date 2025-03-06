@@ -204,6 +204,20 @@ final functionKeyboard = [
     ),
   ],
   [
+    const BasicKeyboardButtonConfig(
+      label: r'\int_{\Box}^{\Box} (\Box) dx',
+      value: r'\int',
+      asTex: true,
+      args: [TeXArg.undbraces, TeXArg.powbraces, TeXArg.parenthesesdx],
+    ),
+    const BasicKeyboardButtonConfig(
+      label: r'\frac{d}{dx} ({\Box})',
+      value: r'\frac{d}{dx}',
+      asTex: true,
+      args: [TeXArg.braces],
+    ),
+  ],
+  [
     const PageButtonConfig(flex: 3),
     const BasicKeyboardButtonConfig(
       label: '(',
@@ -231,8 +245,8 @@ final standardKeyboard = [
     _digitButtons[9],
     const BasicKeyboardButtonConfig(
       label: '×',
-      value: r'\cdot',
-      keyboardCharacters: ['*'],
+      value: r'\times',
+      keyboardCharacters: ['×'],
       highlighted: true,
     ),
     const BasicKeyboardButtonConfig(
@@ -269,6 +283,14 @@ final standardKeyboard = [
     NextButtonConfig(),
     SubmitButtonConfig(),
   ],
+  [
+    const BasicKeyboardButtonConfig(
+      label: '=',
+      value: '=',
+      keyboardCharacters: ['='],
+      highlighted: true,
+    ),
+  ]
 ];
 
 /// Keyboard getting shown for number input only.
