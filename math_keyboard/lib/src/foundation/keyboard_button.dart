@@ -141,6 +141,13 @@ final functionKeyboard = [
       ],
     ),
     const BasicKeyboardButtonConfig(
+      label: r'\Box_{\Box}',
+      value: '_',
+      args: [TeXArg.braces],
+      asTex: true,
+      keyboardCharacters: ['_'],
+    ),
+    const BasicKeyboardButtonConfig(
       label: r'\sin',
       value: r'\sin(',
       asTex: true,
