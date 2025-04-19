@@ -296,6 +296,37 @@ final standardKeyboard = [
       value: '=',
       keyboardCharacters: ['='],
       highlighted: true,
+      flex: 5,
+    ),
+    const BasicKeyboardButtonConfig(
+      label: '[',
+      value: '[',
+      highlighted: true,
+      keyboardCharacters: ['['],
+    ),
+    const BasicKeyboardButtonConfig(
+      label: ']',
+      value: ']',
+      highlighted: true,
+      keyboardCharacters: [']'],
+    ),
+    const BasicKeyboardButtonConfig(
+      label: '{',
+      value: r'\{',
+      highlighted: true,
+      keyboardCharacters: ['{'],
+    ),
+    const BasicKeyboardButtonConfig(
+      label: '}',
+      value: r'\}',
+      highlighted: true,
+      keyboardCharacters: ['}'],
+    ),
+    const BasicKeyboardButtonConfig(
+      label: '|',
+      value: '|',
+      highlighted: true,
+      keyboardCharacters: ['|'],
     ),
   ]
 ];
